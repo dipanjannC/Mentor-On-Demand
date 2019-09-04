@@ -18,7 +18,7 @@ import com.mentor.web.service.UserService;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@RequestMapping("/token")
+@RequestMapping("/login")
 public class AuthenticationController {
 
     @Autowired
