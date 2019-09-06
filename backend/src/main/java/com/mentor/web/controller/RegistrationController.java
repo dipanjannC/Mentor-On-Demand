@@ -11,7 +11,8 @@ import com.mentor.web.model.User;
 import com.mentor.web.model.UserPojo;
 import com.mentor.web.service.UserService;
 
-@CrossOrigin(origins = "*", maxAge = 36000)
+
+@CrossOrigin(origins = "http://localhost:4200",maxAge = 36000)
 @RestController
 @RequestMapping("/signup")
 public class RegistrationController {
@@ -20,7 +21,7 @@ public class RegistrationController {
 	private UserService userService;
 
 	@PostMapping
-	public User saveUser(@RequestBody UserPojo user) {
+	public User registerUser(@RequestBody UserPojo user) {
 		System.out.println("\n\n\n hi \n\n\n");
 		System.out.println("User value : " + user.getFirstname());
 		return userService.save(user);
