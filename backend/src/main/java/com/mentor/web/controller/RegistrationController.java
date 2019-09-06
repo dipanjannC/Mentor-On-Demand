@@ -20,7 +20,7 @@ public class RegistrationController {
 	private UserService userService;
 
 	@PostMapping
-	public User saveUser(@RequestBody UserPojo user) {
+	public User registerUser(@RequestBody UserPojo user) {
 		System.out.println("\n\n\n hi \n\n\n");
 		System.out.println("User value : " + user.getFirstname());
 		return userService.save(user);
