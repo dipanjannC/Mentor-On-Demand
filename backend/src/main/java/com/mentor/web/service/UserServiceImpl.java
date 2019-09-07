@@ -18,7 +18,7 @@ import com.mentor.web.model.User;
 import com.mentor.web.model.UserPojo;
 import com.mentor.web.repository.UserRepository;
 
-@Service(value = "userService")
+@Service
 public class UserServiceImpl implements UserDetailsService, UserService {
 
 	@Autowired

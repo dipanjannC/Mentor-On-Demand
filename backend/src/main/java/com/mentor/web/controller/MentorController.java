@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mentor.web.model.MentorSkills;
-import com.mentor.web.repository.MentorSkillsRepository;
+import com.mentor.web.service.MentorService;
 
 @CrossOrigin(origins = "http://localhost:4200",maxAge = 36000)
 @RestController
@@ -17,14 +17,11 @@ import com.mentor.web.repository.MentorSkillsRepository;
 public class MentorController {
 
 	@Autowired
-	private MentorSkillsRepository repository;
+	private MentorService mentorService;
 	
 	@GetMapping("/skills/getAllskill")
 	public List<MentorSkills> getAllSkills()
 	{
-			
-			List<MentorSkills> skills = (List<MentorSkills>) repository.findAll();
-			
-			return skills;
+		return mentorService.getAllSkills();
 	}
 }
