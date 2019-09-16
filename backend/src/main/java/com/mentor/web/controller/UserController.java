@@ -16,18 +16,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.mentor.web.model.User;
 import com.mentor.web.model.UserPojo;
-import com.mentor.web.repository.UserRepository;
 import com.mentor.web.security.model.ApiResponse;
 import com.mentor.web.service.UserService;
 
 @CrossOrigin(origins = "http://localhost:4200", maxAge = 36000)
 @RestController
-@RequestMapping("/mentorX/users")
+@RequestMapping("/users")
 public class UserController {
 
 	@Autowired
 	private UserService userService;
-	private UserRepository userRepository;
+
 
 	@PostMapping
 	public ApiResponse<User> saveUser(@RequestBody UserPojo user) {

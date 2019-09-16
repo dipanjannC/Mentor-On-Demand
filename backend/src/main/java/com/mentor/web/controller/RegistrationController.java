@@ -14,7 +14,7 @@ import com.mentor.web.service.UserService;
 
 @CrossOrigin(origins = "http://localhost:4200",maxAge = 36000)
 @RestController
-@RequestMapping("/mentorX/signup")
+@RequestMapping("/signup")
 public class RegistrationController {
 
 	@Autowired

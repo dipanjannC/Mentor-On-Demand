@@ -19,7 +19,7 @@ import com.mentor.web.service.TrainingService;
 
 @CrossOrigin(origins = "http://localhost:4200", maxAge = 36000)
 @RestController
-@RequestMapping("/mentorX/trainings")
+@RequestMapping("/trainings")
 public class TrainingController {
 
 	@Autowired

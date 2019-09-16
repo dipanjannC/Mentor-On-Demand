@@ -1,6 +1,5 @@
 package com.mentor.web.security.config;
 
-import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -23,7 +22,8 @@ import com.mentor.web.security.config.JwtAuthenticationFilter;;
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-	@Resource(name = "userService")
+	
+	@Autowired
 	private UserDetailsService userDetailsService;
 
 	@Autowired
