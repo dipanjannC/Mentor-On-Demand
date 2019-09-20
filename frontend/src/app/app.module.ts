@@ -17,6 +17,7 @@ import { IndexNavbarComponent } from './shared/index-navbar/index-navbar.compone
 import { UserHomeComponent } from './user/user-home/user-home.component';
 import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
 import { HomeNavbarComponent } from './shared/home-navbar/home-navbar.component';
+import { AdminSidebarComponent } from './admin/admin-sidebar/admin-sidebar.component';
 
 
 
@@ -30,6 +31,7 @@ import { HomeNavbarComponent } from './shared/home-navbar/home-navbar.component'
     UserHomeComponent,
     AdminHomeComponent,
     HomeNavbarComponent,
+    AdminSidebarComponent,
 
   ],
   imports: [
