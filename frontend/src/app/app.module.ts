@@ -13,7 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthenticationService } from './services/auth.service';
 import { UserService } from './services/user.service';
-import { HomeNavbarComponent } from './shared/home-navbar/home-navbar.component';
+import { IndexNavbarComponent } from './shared/index-navbar/index-navbar.component';
 
 
 
@@ -24,7 +24,7 @@ import { HomeNavbarComponent } from './shared/home-navbar/home-navbar.component'
     HomeComponent,
     LoginComponent,
     ListUserComponent,
-    HomeNavbarComponent,
+    IndexNavbarComponent,
    
   ],
   imports: [
