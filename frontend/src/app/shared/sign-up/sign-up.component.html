@@ -1,1 +1,61 @@
-<p>sign-up works!</p>
+<app-home-navbar></app-home-navbar>
+<div class="sidenav">
+    <div class="register-main-text">
+        <h2>MentorX<br /></h2>
+        <p>The new way to find mentors, and Be one.</p>
+    </div>
+</div>
+<div class="main">
+    <div class="col-md-6 col-sm-12">
+        <div class="register-form">
+            <br />
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName="firstname" placeholder="First Name" />
+                    <div *ngIf="submitted && loginForm.controls.email.errors" class="error">
+                        <div *ngIf="loginForm.controls.email.errors.required">
+                            Firstname is required
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName="lastname" placeholder="Last Name" />
+                    <div *ngIf="submitted && loginForm.controls.email.errors" class="error">
+                        <div *ngIf="loginForm.controls.email.errors.required">
+                            Lastname is required
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" formControlName="contact" placeholder="Contact" />
+                    <div *ngIf="submitted && loginForm.controls.email.errors" class="error">
+                        <div *ngIf="loginForm.controls.email.errors.required">
+                            Contact is required
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName="email" placeholder="Email" />
+                    <div *ngIf="submitted && loginForm.controls.email.errors" class="error">
+                        <div *ngIf="loginForm.controls.email.errors.required">
+                            Email is required
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" formControlName="password" placeholder="Password" />
+                    <div *ngIf="submitted && loginForm.controls.password.errors" class="error">
+                        <div *ngIf="loginForm.controls.password.errors.required">
+                            Password is required
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-black">Register</button>
+                <div *ngIf="invalidLogin" class="error">
+                    <div>Invalid credentials.</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
