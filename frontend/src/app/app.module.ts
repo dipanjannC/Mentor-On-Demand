@@ -17,6 +17,10 @@ import { UserHomeComponent } from './user/user-home/user-home.component';
 import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
 import { AdminSidebarComponent } from './admin/admin-sidebar/admin-sidebar.component';
 import { HomeComponent } from './shared/home/home.component';
+import { FindMentorComponent } from './shared/find-mentor/find-mentor.component';
+import { HomeNavbarComponent } from './shared/home-navbar/home-navbar.component';
+import { BeMentorComponent } from './shared/be-mentor/be-mentor.component';
+
 
 
 
@@ -30,7 +34,10 @@ import { HomeComponent } from './shared/home/home.component';
     AdminHomeComponent,
     AdminSidebarComponent,
     HomeComponent,
-
+    FindMentorComponent,
+    HomeNavbarComponent,
+    BeMentorComponent,
+    
   ],
   imports: [
     BrowserModule,

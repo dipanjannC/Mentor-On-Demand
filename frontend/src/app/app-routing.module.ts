@@ -6,6 +6,8 @@ import { LoginComponent } from './shared/login/login.component';
 import { SignUpComponent } from './shared/sign-up/sign-up.component';
 import { AdminSidebarComponent } from './admin/admin-sidebar/admin-sidebar.component';
 import { HomeComponent } from './shared/home/home.component';
+import { FindMentorComponent } from './shared/find-mentor/find-mentor.component';
+import { BeMentorComponent } from './shared/be-mentor/be-mentor.component';
 
 
 const routes: Routes = [
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'list-user', component: ListUserComponent },
   { path : 'register', component : SignUpComponent},
+  { path : 'find-mentor', component : FindMentorComponent},
+  { path : 'be-mentor', component : BeMentorComponent},
   { path : 'admin-home', component : AdminSidebarComponent }
 ];
 
