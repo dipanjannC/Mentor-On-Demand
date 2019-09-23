@@ -13,11 +13,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthenticationService } from './services/auth.service';
 import { UserService } from './services/user.service';
-import { IndexNavbarComponent } from './shared/index-navbar/index-navbar.component';
 import { UserHomeComponent } from './user/user-home/user-home.component';
 import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
-import { HomeNavbarComponent } from './shared/home-navbar/home-navbar.component';
 import { AdminSidebarComponent } from './admin/admin-sidebar/admin-sidebar.component';
+import { HomeComponent } from './shared/home/home.component';
 
 
 
@@ -27,11 +26,10 @@ import { AdminSidebarComponent } from './admin/admin-sidebar/admin-sidebar.compo
     SignUpComponent,
     LoginComponent,
     ListUserComponent,
-    IndexNavbarComponent,
     UserHomeComponent,
     AdminHomeComponent,
-    HomeNavbarComponent,
     AdminSidebarComponent,
+    HomeComponent,
 
   ],
   imports: [
