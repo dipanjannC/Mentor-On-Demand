@@ -4,13 +4,13 @@
 }
 
 .how-section1 h4 {
-    color: #ffa500;
+    color: #000000;
     font-weight: bold;
     font-size: 30px;
 }
 
 .how-section1 .subheading {
-    color: #3931af;
+    color: #505050;
     font-size: 20px;
 }
 
@@ -24,4 +24,15 @@
 
 .how-img img {
     width: 40%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }

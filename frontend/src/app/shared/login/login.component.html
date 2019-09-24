@@ -1,66 +1,66 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"></div>
-  <div class="mx-auto order-0">
-      <a class="navbar-brand mx-auto" href="#">mentorX</a>
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"></div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#">mentorX</a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
           <span class="navbar-toggler-icon"></span>
       </button>
-  </div>
-  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="#" routerLink="./admin-home" >Home</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Find Mentor</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Be Mentor</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-          </li>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#" routerLink="./admin-home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Find Mentor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Be Mentor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
 
-          <!-- <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#" routerLink="./register">Register</a>
           </li> -->
-      </ul>
-  </div>
+        </ul>
+    </div>
 </nav>
 <div class="sidenav">
-  <div class="login-main-text">
-    <h2>MentorX<br /></h2>
-    <p>The new way to find mentors, and Be one.</p>
-  </div>
+    <div class="login-main-text">
+        <h2>MentorX<br /></h2>
+        <p>The new way to find mentors, and Be one.</p>
+    </div>
 </div>
 <div class="main">
-  <div class="col-md-6 col-sm-12">
-    <div class="login-form">
-      <br />
-      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-        <div class="form-group">
-          <input type="text" class="form-control" formControlName="email" placeholder="Email" />
-          <div *ngIf="submitted && loginForm.controls.email.errors" class="error">
-            <div *ngIf="loginForm.controls.email.errors.required">
-              Email is required
-            </div>
-          </div>
+    <div class="col-md-6 col-sm-12">
+        <div class="login-form">
+            <br />
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName="email" placeholder="Email" />
+                    <div *ngIf="submitted && loginForm.controls.email.errors" class="error">
+                        <div *ngIf="loginForm.controls.email.errors.required">
+                            Email is required
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" formControlName="password" placeholder="Password" />
+                    <div *ngIf="submitted && loginForm.controls.password.errors" class="error">
+                        <div *ngIf="loginForm.controls.password.errors.required">
+                            Password is required
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-black">Login</button>
+                <div *ngIf="invalidLogin" class="error">
+                    <div>Invalid credentials.</div>
+                </div>
+                <p>Don't have a account? <a href="./register" style="color: black;"><b> Register </b></a> </p>
+            </form>
         </div>
-        <div class="form-group">
-          <input type="password" class="form-control" formControlName="password" placeholder="Password" />
-          <div *ngIf="submitted && loginForm.controls.password.errors" class="error">
-            <div *ngIf="loginForm.controls.password.errors.required">
-              Password is required
-            </div>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-black">Login</button>
-        <div *ngIf="invalidLogin" class="error">
-          <div>Invalid credentials.</div>
-        </div>
-        <p>Don't have a account? <a href="./register" style="color: black;"><b> Register </b></a> </p>
-      </form>
     </div>
-  </div>
 </div>

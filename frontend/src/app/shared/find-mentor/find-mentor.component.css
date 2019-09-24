@@ -29,7 +29,7 @@
 @media (min-width: 992px) {
     .search-sec {
         position: relative;
-        background: rgba(26, 70, 104, 0.51);
+        background: #202020;
     }
 }
 
@@ -37,4 +37,15 @@
     .search-sec {
         background: #1A4668;
     }
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 40%;
+}
+
+img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }

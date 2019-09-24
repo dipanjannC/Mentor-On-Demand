@@ -20,6 +20,8 @@ import { HomeComponent } from './shared/home/home.component';
 import { FindMentorComponent } from './shared/find-mentor/find-mentor.component';
 import { HomeNavbarComponent } from './shared/home-navbar/home-navbar.component';
 import { BeMentorComponent } from './shared/be-mentor/be-mentor.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { NewsletterComponent } from './shared/newsletter/newsletter.component';
 
 
 
@@ -37,6 +39,8 @@ import { BeMentorComponent } from './shared/be-mentor/be-mentor.component';
     FindMentorComponent,
     HomeNavbarComponent,
     BeMentorComponent,
+    FooterComponent,
+    NewsletterComponent,
     
   ],
   imports: [
